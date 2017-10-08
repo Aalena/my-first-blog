@@ -5,4 +5,6 @@ urlpatterns = [
     url(r'^index$',views.post_list,name='post_list'),
     url(r'^post/(?P<pk>\d+)/$',views.post_detail,name='post_detail'),
     #(?P<pk>\d+) – It means that Django will take everything that you place here and transfer it to a view as a variable called pk.
+    url(r'^post/new/$',views.post_new,name='post_new'),
+    url(r'^post/edit/(?P<pk>\d+)/$',views.post_edit,name='post_edit'),
 ]
